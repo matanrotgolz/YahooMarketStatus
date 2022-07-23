@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-export const BoxContainer = styled.div`
+
+export const BoxContainer2 = styled.div`
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -75,3 +76,4 @@ export const SubmitButtom = styled.button`
         filter: brightness(1.03);
     }
 `;
+

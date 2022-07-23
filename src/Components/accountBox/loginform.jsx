@@ -1,6 +1,6 @@
 import YahooApp from './App'
 import React, { useContext} from 'react';
-import {BoxContainer,FormContainer,Input,SubmitButtom,MutedLink,BoldLink} from './common.jsx';
+import {BoxContainer2,FormContainer,Input,SubmitButtom,MutedLink,BoldLink} from './common.jsx';
 import AccountContext  from './accountContext.js';
 import ReactDOM from 'react-dom';
 
@@ -21,7 +21,7 @@ export default function LoginForm(props){
             }
         }
         return(
-            <BoxContainer>
+            <BoxContainer2>
                 <FormContainer>
                     <Input id= "email" type = "email" placeholder="Email"/>
                     <Input id= "password" type = "password" placeholder="Password"/>
@@ -29,6 +29,6 @@ export default function LoginForm(props){
                 <MutedLink href = '#'>Forget Your Password?</MutedLink>
                 <SubmitButtom type = "submit" onClick={CheckData}>Sign In</SubmitButtom>
                 <MutedLink>Dont have an account?<BoldLink href = '#' onClick = {switchToSignUP}><strong>Sign Up</strong></BoldLink></MutedLink>
-            </BoxContainer>
+            </BoxContainer2>
         );
 }
